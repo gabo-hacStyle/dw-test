@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: erp
+    description: "Prova"
+    database: fea24_6
+    schema: raw_northwind
+    tables:
+      - name: employee
+        description: 'Tabela com dados de funcionarios'
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+              
